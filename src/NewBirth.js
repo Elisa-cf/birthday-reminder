@@ -37,7 +37,7 @@ const NewBirth = ({people, setPeople}) => {
         <input type="text" id="img" placeholder="add your avatar" value={newImage} onChange={(e) => setNewImage(e.target.value)}/>
         </div> 
         <div className="form-control form-control-check">
-        <label>Reminder</label>
+        <label>Important</label>
         <input className="reminder" type="checkbox" checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}/>
         </div>
 
