@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Birthday Reminder 🥳🎉🎂 - React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this application you can add the birthday of your friends.
+Add their names, years and an avatar or a picture.
+
+Do you have a special friend? Add his or her birthday
+as a important, clicking on the checkbox.
+
+Do you need to delete the full list? Click on the button 'Clear All'.
+
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
