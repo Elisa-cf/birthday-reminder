@@ -12,6 +12,6 @@ Do you need to delete the full list? Click on the button 'Clear All'.
 
 To install the project locally:
 
-Clone the repository
-npm install
-npm start
+> Clone the repository
+> npm install
+> npm start
