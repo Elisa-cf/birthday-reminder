@@ -1,13 +1,14 @@
 import React from 'react'
+import { FaTimes } from 'react-icons/fa'
 
-const List = ({people, onToggle}) => {
+const List = ({people, onToggle, onDelete}) => {
     return (
        <>
     
       {people.map((person, id) =>  <article key={id} className={`person ${person.reminder ? "reminder" :""}`}  onDoubleClick={() => onToggle(people.id)}>
         {/* if the person.reminder is true then we gonna have the class of reminder, else nothing. */}
         <img src={person.image} alt={person.name}/><div>
-          <h4>{person.name}</h4>
+          <h4>{person.name}<FaTimes style ={{color:'#1AA179', cursor:'pointer', fontSize:'18px'}}  onClick={() => onDelete(people.id)}/></h4>
           <p>{person.age} years</p>
         </div>
       </article>

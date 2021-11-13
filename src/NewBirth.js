@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 
+
 const NewBirth = ({people, setPeople}) => {
     const [newName,setNewName] = useState('')
     const [newAge, setNewAge] = useState('')
