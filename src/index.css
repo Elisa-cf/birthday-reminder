@@ -250,3 +250,10 @@ main {
 .btn:active {
   transform: scale(0.98);
 }
+
+.reminder {
+  background-color: var(--clr-primary-2);
+  /* border-left: 5px solid var(--clr-primary-6); */
+  padding-left: 5px;
+  border-radius: 5px;
+}
