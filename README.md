@@ -1,5 +1,7 @@
 # Birthday Reminder 🥳🎉🎂 - React App
 
+live site: https://anniversary-reminder.netlify.app/
+
 In this application you can add the birthday of your friends.
 Add their names, years and an avatar or a picture.
 
