@@ -8,6 +8,8 @@ Add their names, years and an avatar or a picture.
 Do you have a special friend? Add his or her birthday
 as a important by clicking on the checkbox.
 
+You can also double click on one of the birthdays that you have already added on the list and highlight it as important.
+
 Do you need to delete the full list? Click on the button 'Clear All' or delete one by one by clicking on the cross.
 
 ## Installation
