@@ -27,15 +27,15 @@ const NewBirth = ({people, setPeople}) => {
     <form className="add-form" onSubmit={event => newAnniversary(event)}>
         <div className="form-control">
         <label>Add a name</label>
-        <input type="text" placeholder="add name" value={newName} onChange={(e) => setNewName(e.target.value)}/>
+        <input type="text" placeholder="e.g. Elodie" value={newName} onChange={(e) => setNewName(e.target.value)}/>
         </div>
         <div className="form-control">
         <label>Add the age</label>
-        <input type="text" placeholder="add age" value={newAge} onChange={(e) => setNewAge(parseInt(e.target.value))}/>
+        <input type="text" placeholder="e.g. 33" value={newAge} onChange={(e) => setNewAge(parseInt(e.target.value))}/>
         </div>
         <div className="form-control">
         <label for="img">Paste your avatar in url format:</label>
-        <input type="text" id="img" placeholder="add your avatar" value={newImage} onChange={(e) => setNewImage(e.target.value)}/>
+        <input type="text" id="img" placeholder="e.g. https://i.imgur.com/T3xgmY3.png" value={newImage} onChange={(e) => setNewImage(e.target.value)}/>
         </div> 
         <div className="form-control form-control-check">
         <label>Important</label>

@@ -6,7 +6,7 @@ const List = ({people, onToggle, onDelete}) => {
        <>
     
       {people.map((person, id) =>  <article key={id} className={`person ${person.reminder ? "reminder" :""}`}  onDoubleClick={() => onToggle(people.id)}>
-        {/* if the person.reminder is true then we gonna have the class of reminder, else nothing. */}
+        {/* but default class person but sif the person.reminder is true then we gonna have the class of reminder, else nothing. */}
         <img src={person.image} alt={person.name}/><div>
           <h4>{person.name}<FaTimes style ={{color:'#1AA179', cursor:'pointer', fontSize:'18px'}}  onClick={() => onDelete(people.id)}/></h4>
           <p>{person.age} years</p>

@@ -6,6 +6,7 @@ import NewBirth from './NewBirth';
 
 function App() {
   const[people, setPeople] = useState([])
+  // to add the data: useState(data + import component)
 
 
         //toggle reminder
