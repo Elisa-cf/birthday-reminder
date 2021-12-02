@@ -1,14 +1,28 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
+import axios from "axios";
 
-const List = ({ people, onToggle, onDelete }) => {
+const List = ({ people, onToggle, refetchBirthdays }) => {
+  const deleteBirthdayHandler = (id) => {
+    axios
+      .delete(`http://localhost:8000/birthday/${id}`)
+      .then(() => refetchBirthdays());
+  };
+
+  // axios
+  //   .delete(`http://localhost:8000/birthday/${id}`)
+  //   .then((response) => {
+  //     console.log(response.status);
+  //   })
+  //   .catch((e) => console.log("something went wrong!", e));
+
   return (
     <>
       {people.map((person, id) => (
         <article
           key={id}
-          className={`person ${person.reminder ? "reminder" : ""}`}
-          onDoubleClick={() => onToggle(people.id)}
+          className={`person ${person.reminder ? "reminder" : null}`}
+          onDoubleClick={() => onToggle()}
         >
           {/* but default class person but if the person.reminder is true then we gonna have the class of reminder, else nothing. */}
           <img src={person.url} alt={person.name} />
@@ -21,7 +35,7 @@ const List = ({ people, onToggle, onDelete }) => {
                   cursor: "pointer",
                   fontSize: "18px",
                 }}
-                onClick={() => onDelete(people.id)}
+                onClick={() => deleteBirthdayHandler(person.id)}
               />
             </h4>
             <p>{person.age} years</p>

@@ -1,12 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
+// import { nanoid } from "nanoid";
 
 const NewBirth = ({ people, setPeople, refetchFlag, setRefetchFlag }) => {
   const [newName, setNewName] = useState("");
   const [newAge, setNewAge] = useState("");
   const [newUrl, setNewUrl] = useState("");
   const [reminder, setReminder] = useState(false);
+  const { id } = useParams();
+  console.log(id);
 
   const newAnniversary = (e) => {
     e.preventDefault();

@@ -27,6 +27,10 @@ function App() {
     setPeople(people.filter((person) => person.id !== id));
   };
 
+  const refetchBirthdays = () => {
+    setRefetchFlag(!refetchFlag);
+  };
+
   const url = "http://localhost:8000/birthday";
 
   useEffect(() => {
@@ -56,6 +60,7 @@ function App() {
         />
         <h3>{people.length} birthdays today</h3>
         <List
+          refetchBirthdays={refetchBirthdays}
           people={people}
           onToggle={toggleReminder}
           onDelete={deleteBirthday}
