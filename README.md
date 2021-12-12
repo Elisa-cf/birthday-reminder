@@ -12,6 +12,11 @@ You can also double click on one of the birthdays that you have already added on
 
 Do you need to delete the full list? Click on the button 'Clear All' or delete one by one by clicking on the cross.
 
+## Backend of this application
+
+I've created a local database using node.js, express.js and sql.
+You can check it out here: https://github.com/Elisa-cf/birthday-reminder-backend/
+
 ## Installation
 
 To install the project locally:
